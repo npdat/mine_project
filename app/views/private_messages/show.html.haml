@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Content:
+  = @private_message.content
+%p
+  %b User:
+  = @private_message.user_id
+%p
+  %b Report:
+  = @private_message.report_id
+
+= link_to 'Edit', edit_private_message_path(@private_message)
+\|
+= link_to 'Back', private_messages_path

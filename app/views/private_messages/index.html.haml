@@ -1,0 +1,23 @@
+%h1 Listing private_messages
+
+%table
+  %tr
+    %th Content
+    %th User
+    %th Report
+    %th
+    %th
+    %th
+
+  - @private_messages.each do |private_message|
+    %tr
+      %td= private_message.content
+      %td= private_message.user_id
+      %td= private_message.report_id
+      %td= link_to 'Show', private_message
+      %td= link_to 'Edit', edit_private_message_path(private_message)
+      %td= link_to 'Destroy', private_message, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Private message', new_private_message_path

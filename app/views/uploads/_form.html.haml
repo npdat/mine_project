@@ -1,0 +1,22 @@
+= form_for @upload do |f|
+  - if @upload.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@upload.errors.count, "error")} prohibited this upload from being saved:"
+      %ul
+        - @upload.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :pdf_file_name
+    = f.text_field :pdf_file_name
+  .field
+    = f.label :pdf_content_type
+    = f.text_field :pdf_content_type
+  .field
+    = f.label :pdf_file_size
+    = f.number_field :pdf_file_size
+  .field
+    = f.label :pdf_updated_at
+    = f.datetime_select :pdf_updated_at
+  .actions
+    = f.submit 'Save'
