@@ -10927,3 +10927,306 @@ Processing by ReportsController#new as HTML
   Rendered layouts/_header.html.haml (0.3ms)
   Rendered layouts/_footer.html.haml (0.2ms)
 Completed 200 OK in 337ms (Views: 332.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/reports/new" for 127.0.0.1 at 2015-05-28 08:21:33 +0700
+Processing by ReportsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered reports/_form.html.haml (10.5ms)
+  Rendered reports/new.html.haml within layouts/application (12.6ms)
+  Rendered layouts/_header.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 365ms (Views: 355.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/private_messages.css?body=1" for 127.0.0.1 at 2015-05-28 08:21:33 +0700
+
+
+Started GET "/assets/reports.css?body=1" for 127.0.0.1 at 2015-05-28 08:21:33 +0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-05-28 08:21:33 +0700
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2015-05-28 08:21:33 +0700
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2015-05-28 08:21:33 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-05-28 08:21:33 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-28 08:21:33 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-28 08:21:34 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-28 08:21:34 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-28 08:21:34 +0700
+
+
+Started GET "/assets/private_messages.js?body=1" for 127.0.0.1 at 2015-05-28 08:21:34 +0700
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2015-05-28 08:21:34 +0700
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2015-05-28 08:21:34 +0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-05-28 08:21:34 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-05-28 08:21:34 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-28 08:21:34 +0700
+
+
+Started GET "/reports" for 127.0.0.1 at 2015-05-28 08:21:41 +0700
+Processing by ReportsController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mReport Load (0.3ms)[0m  [1mSELECT "reports".* FROM "reports"[0m
+  Rendered reports/index.html.haml within layouts/application (5.1ms)
+  Rendered layouts/_header.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 322ms (Views: 315.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/reports/new" for 127.0.0.1 at 2015-05-28 08:21:44 +0700
+Processing by ReportsController#new as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered reports/_form.html.haml (8.8ms)
+  Rendered reports/new.html.haml within layouts/application (11.0ms)
+  Rendered layouts/_header.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 343ms (Views: 333.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2015-05-28 08:26:33 +0700
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mReport Load (0.5ms)[0m  SELECT "reports".* FROM "reports"
+  Rendered reports/index.html.haml within layouts/application (3.5ms)
+  Rendered layouts/_header.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 331ms (Views: 323.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/reports/new" for 127.0.0.1 at 2015-05-28 08:26:35 +0700
+Processing by ReportsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered reports/_form.html.haml (13.8ms)
+  Rendered reports/new.html.haml within layouts/application (17.0ms)
+  Rendered layouts/_header.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 343ms (Views: 336.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2015-05-28 08:26:36 +0700
+Processing by ReportsController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mReport Load (0.4ms)[0m  [1mSELECT "reports".* FROM "reports"[0m
+  Rendered reports/index.html.haml within layouts/application (3.3ms)
+  Rendered layouts/_header.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 328ms (Views: 319.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/reports/new" for 127.0.0.1 at 2015-05-28 08:26:38 +0700
+Processing by ReportsController#new as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered reports/_form.html.haml (13.7ms)
+  Rendered reports/new.html.haml within layouts/application (17.3ms)
+  Rendered layouts/_header.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 335ms (Views: 325.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2015-05-28 08:26:40 +0700
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mReport Load (0.5ms)[0m  SELECT "reports".* FROM "reports"
+  Rendered reports/index.html.haml within layouts/application (3.4ms)
+  Rendered layouts/_header.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 350ms (Views: 341.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2015-05-28 08:26:42 +0700
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mReport Load (0.3ms)[0m  SELECT "reports".* FROM "reports"
+  Rendered reports/index.html.haml within layouts/application (2.3ms)
+  Rendered layouts/_header.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 362ms (Views: 354.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/private_messages.css?body=1" for 127.0.0.1 at 2015-05-28 08:26:43 +0700
+
+
+Started GET "/assets/reports.css?body=1" for 127.0.0.1 at 2015-05-28 08:26:43 +0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-05-28 08:26:43 +0700
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2015-05-28 08:26:43 +0700
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2015-05-28 08:26:43 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-05-28 08:26:43 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-28 08:26:43 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-28 08:26:43 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-28 08:26:43 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-28 08:26:43 +0700
+
+
+Started GET "/assets/private_messages.js?body=1" for 127.0.0.1 at 2015-05-28 08:26:43 +0700
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2015-05-28 08:26:43 +0700
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2015-05-28 08:26:43 +0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-05-28 08:26:43 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-05-28 08:26:43 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-28 08:26:43 +0700
+
+
+Started GET "/reports" for 127.0.0.1 at 2015-05-28 08:27:40 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ReportsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mReport Load (0.8ms)[0m  [1mSELECT "reports".* FROM "reports"[0m
+  Rendered reports/index.html.haml within layouts/application (14.8ms)
+  Rendered layouts/_header.html.haml (16.2ms)
+  Rendered layouts/_footer.html.haml (3.5ms)
+Completed 200 OK in 595ms (Views: 546.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/private_messages.css?body=1" for 127.0.0.1 at 2015-05-28 08:27:41 +0700
+
+
+Started GET "/assets/reports.css?body=1" for 127.0.0.1 at 2015-05-28 08:27:41 +0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-05-28 08:27:41 +0700
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2015-05-28 08:27:41 +0700
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2015-05-28 08:27:41 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-05-28 08:27:41 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-28 08:27:41 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-28 08:27:41 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-28 08:27:41 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-28 08:27:41 +0700
+
+
+Started GET "/assets/private_messages.js?body=1" for 127.0.0.1 at 2015-05-28 08:27:41 +0700
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2015-05-28 08:27:41 +0700
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2015-05-28 08:27:41 +0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-05-28 08:27:41 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-05-28 08:27:41 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-28 08:27:41 +0700
+
+
+Started GET "/reports" for 127.0.0.1 at 2015-05-28 08:27:42 +0700
+Processing by ReportsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mReport Load (0.3ms)[0m  [1mSELECT "reports".* FROM "reports"[0m
+  Rendered reports/index.html.haml within layouts/application (2.2ms)
+  Rendered layouts/_header.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 356ms (Views: 351.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/private_messages.css?body=1" for 127.0.0.1 at 2015-05-28 08:27:43 +0700
+
+
+Started GET "/assets/reports.css?body=1" for 127.0.0.1 at 2015-05-28 08:27:43 +0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-05-28 08:27:43 +0700
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2015-05-28 08:27:43 +0700
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2015-05-28 08:27:43 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-05-28 08:27:43 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-28 08:27:43 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-28 08:27:43 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-28 08:27:43 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-28 08:27:43 +0700
+
+
+Started GET "/assets/private_messages.js?body=1" for 127.0.0.1 at 2015-05-28 08:27:43 +0700
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2015-05-28 08:27:43 +0700
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2015-05-28 08:27:43 +0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-05-28 08:27:43 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-05-28 08:27:43 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-28 08:27:43 +0700
