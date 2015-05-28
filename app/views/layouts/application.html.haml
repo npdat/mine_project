@@ -8,5 +8,8 @@
   %body{class: controller.controller_name}
     .container
       =render 'layouts/header'
-      = yield
-      -#= render 'layouts/footer'
+      .panel.panel-default
+        .panel-body
+          &nbsp;
+          = yield
+      = render 'layouts/footer'

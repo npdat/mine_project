@@ -10,3 +10,14 @@
         -#=image_tag("wallem-logo.png", class: "brand", style: "margin-top: 2px; height:45px")
         %span.icon-bar
       %a.navbar-brand{:href => "#"} &nbsp;&nbsp;Report Management
+      %a.navbar-brand{:href => "#"} &nbsp;&nbsp;Report Newest
+      %a.navbar-brand{:href => "#"} &nbsp;&nbsp;Search
+      %a.navbar-brand{:href => "#"} &nbsp;&nbsp;My Report
+    .collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right
+        - if session[:user_id]
+          %li.dropdown
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              Hi,
+              = session[:username]
+

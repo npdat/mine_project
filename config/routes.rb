@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+
+  root 'reports#index'
+
+  get 'user_sessions/new'
+  post 'user_sessions/create'
+  get 'user_sessions/destroy'
+
   resources :uploads
 
   resources :reports

@@ -1,0 +1,9 @@
+.Sign_Form
+  %h3 Log in
+  = form_tag :action => 'create' do
+    %p Username or Email:<br/>
+    = text_field_tag :username_or_email
+    %p Password:<br/>
+    = password_field_tag :login_password
+    <br/>
+    = submit_tag "Log In", :class => "btn btn-default"
