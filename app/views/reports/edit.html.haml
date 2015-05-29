@@ -1,7 +1,6 @@
-%h1 Editing report
+.btn.btn-mini.btn-default.btn-xs{:style=>"float: right;"}
+  = link_to 'Back', 'javascript:history.go(-1);'
 
+%h3{:style=>"color: #337AB7"} Editing report
 = render 'form'
 
-= link_to 'Show', @report
-\|
-= link_to 'Back', reports_path

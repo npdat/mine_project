@@ -1,19 +1,33 @@
-= form_for @report do |f|
-  - if @report.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@report.errors.count, "error")} prohibited this report from being saved:"
-      %ul
-        - @report.errors.full_messages.each do |msg|
-          %li= msg
+= form_for @report, html: { multipart: true, class: "dropzone"} do |f|
+  .container{:style=>"background-color: #f7f7f9; margin-bottom: 20px"}
+    .field
+      = f.label :report_name
+      = f.text_area :report_name
+    .field
+      = f.label "Path (only pdf format)"
+      = f.file_field :path#, accept: 'image/png,image/gif,image/jpeg'
+    %br
+  .actions{:style=>"margin-left: 0px"}
+    = f.submit "Save report", :class => "btn btn-default"
+    %span.label.label-danger
+      = flash[:notice]
 
-  .field
-    = f.label :report_name
-    = f.text_field :report_name
-  .field
-    = f.label :path
-    = f.text_field :path
-  .field
-    = f.label :user_id
-    = f.number_field :user_id
-  .actions
-    = f.submit 'Save'
+-#= form_for @report do |f|
+-#  - if @report.errors.any?
+-#    #error_explanation
+-#      %h2= "#{pluralize(@report.errors.count, "error")} prohibited this report from being saved:"
+-#      %ul
+-#        - @report.errors.full_messages.each do |msg|
+-#          %li= msg
+-#
+-#  .field
+-#    = f.label :report_name
+-#    = f.text_field :report_name
+-#  .field
+-#    = f.label :path
+-#    = f.text_field :path
+-#  .field
+-#    = f.label :user_id
+-#    = f.number_field :user_id
+-#  .actions
+-#    = f.submit 'Save'

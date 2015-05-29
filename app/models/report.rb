@@ -30,7 +30,7 @@ class Report < ActiveRecord::Base
         new_file_name_with_type = "#{new_name_file}." + file_type
 
         #image_root = Rails.root + 'app/assets/reports/'
-        image_root = "public/uploads/"
+        image_root = "public/uploads"
         #path = image_root + "#{name_folder}/" + new_file_name_with_type
         path = image_root + "/" + new_file_name_with_type
 

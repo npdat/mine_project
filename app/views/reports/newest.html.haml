@@ -1,0 +1,24 @@
+%h3{:style=>"color: #337AB7"} Newest reports
+
+%table.table.table-hover
+  %thead
+    %tr
+      %th{:style=>"text-align: left"}
+        %small Reportname
+      %th{:colspan=>"1"}
+  %tbody
+  - if !@newests.nil?
+    - @newests.each do |report|
+      %tr
+        %td
+          = report.report_name
+        %td.btn.btn-mini.btn-default.btn-xs
+          %a.fancybox{"data-fancybox-type"=>"iframe", :href=>'reports/serve?path='+report.path} Review
+        %td.btn.btn-mini.btn-default.btn-xs
+          = link_to 'Show', reports_show_path :id => report.id, :index => "newest"
+        - if report.user_id == session[:user_id]
+          %td.btn.btn-mini.btn-default.btn-xs
+            = link_to 'Edit', edit_report_path(report)
+          %td.btn.btn-mini.btn-default.btn-xs
+            = link_to 'Destroy', report, method: :delete, data: { confirm: 'Are you sure?' }
+

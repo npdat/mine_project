@@ -1,0 +1,25 @@
+%h4 New message
+
+= form_tag :action => 'sendMail', :controller => 'emails' do
+  .form-group
+    %label{:for=>"email_subject"} Subject
+    = text_field_tag :subject, :class => "form-control"
+  %p
+    %label{:for=>"email_message"} Message
+    = text_area_tag  :message
+  %p
+    = hidden_field_tag :mail_to, params[:user_id]
+  %p
+    = hidden_field_tag :report_id, params[:report_id]
+  %p{:style=>"margin-left: 150px"}
+    = submit_tag "Send mail", :class => "btn btn-default"
+
+.modal-header
+  %button{:type=>"button", :class=>"close", "data-dismiss"=>"modal", "aria-hidden"=>"true"} ×
+  %h3d#myModalLabel Modal header
+.modal-body
+  **here comes whatever you want to show!**
+.modal-footer
+  %button.btn{"data-dismiss"=>"modal", "aria-hidden"=>"true"} Close
+  %button.btn.btn-primary Save changes
+

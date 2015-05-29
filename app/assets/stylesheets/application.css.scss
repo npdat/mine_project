@@ -16,3 +16,13 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 55px 15px 0;
+}
+
+
