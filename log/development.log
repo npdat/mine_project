@@ -20883,3 +20883,33 @@ Processing by ReportsController#index as HTML
   Rendered layouts/_header.html.haml (0.7ms)
   Rendered layouts/_footer.html.haml (0.1ms)
 Completed 200 OK in 143ms (Views: 140.0ms | ActiveRecord: 1.1ms)
+  [1m[36mSQL (9.3ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (87.9ms)[0m  DROP TABLE "private_messages"
+  [1m[36m (117.6ms)[0m  [1mCREATE TABLE "private_messages" ("id" serial primary key, "content" text, "user_id" integer, "report_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (4.1ms)[0m  DROP TABLE "reports"
+  [1m[36m (6.7ms)[0m  [1mCREATE TABLE "reports" ("id" serial primary key, "report_name" character varying(255), "path" character varying(255), "user_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (2.8ms)[0m  DROP TABLE "uploads"
+  [1m[36m (5.6ms)[0m  [1mCREATE TABLE "uploads" ("id" serial primary key, "pdf_file_name" character varying(255), "pdf_content_type" character varying(255), "pdf_file_size" integer, "pdf_updated_at" timestamp, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (3.9ms)[0m  DROP TABLE "users"
+  [1m[36m (8.0ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "username" character varying(255), "password" character varying(255), "address" character varying(255), "phone" character varying(255), "email" character varying(255), "is_admin" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (0.7ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.7ms)[0m  DROP TABLE "private_messages"
+  [1m[36m (7.8ms)[0m  [1mCREATE TABLE "private_messages" ("id" serial primary key, "content" text, "user_id" integer, "report_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (2.9ms)[0m  DROP TABLE "reports"
+  [1m[36m (5.8ms)[0m  [1mCREATE TABLE "reports" ("id" serial primary key, "report_name" character varying(255), "path" character varying(255), "user_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (3.0ms)[0m  DROP TABLE "uploads"
+  [1m[36m (6.8ms)[0m  [1mCREATE TABLE "uploads" ("id" serial primary key, "pdf_file_name" character varying(255), "pdf_content_type" character varying(255), "pdf_file_size" integer, "pdf_updated_at" timestamp, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (3.7ms)[0m  DROP TABLE "users"
+  [1m[36m (9.0ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "username" character varying(255), "password" character varying(255), "address" character varying(255), "phone" character varying(255), "email" character varying(255), "is_admin" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.0ms)[0m  DROP TABLE "private_messages"
+  [1m[36m (7.4ms)[0m  [1mCREATE TABLE "private_messages" ("id" serial primary key, "content" text, "user_id" integer, "report_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (3.1ms)[0m  DROP TABLE "reports"
+  [1m[36m (5.8ms)[0m  [1mCREATE TABLE "reports" ("id" serial primary key, "report_name" character varying(255), "path" character varying(255), "user_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (2.7ms)[0m  DROP TABLE "uploads"
+  [1m[36m (7.2ms)[0m  [1mCREATE TABLE "uploads" ("id" serial primary key, "pdf_file_name" character varying(255), "pdf_content_type" character varying(255), "pdf_file_size" integer, "pdf_updated_at" timestamp, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (3.5ms)[0m  DROP TABLE "users"
+  [1m[36m (6.6ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "username" character varying(255), "password" character varying(255), "address" character varying(255), "phone" character varying(255), "email" character varying(255), "is_admin" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (0.9ms)[0m  SELECT version FROM "schema_migrations"
